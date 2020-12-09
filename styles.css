@@ -50,7 +50,7 @@ h2, p {
     max-width: 375px;
     padding-top: 7em;
     margin: 0 auto;
-    background-image: url('images/bg-pattern-card.svg');
+    background-image: url('bg-pattern-card.svg');
     border-radius: 15px;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
