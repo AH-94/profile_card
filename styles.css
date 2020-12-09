@@ -1,0 +1,132 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --fw-light: 400;
+    --fw-bold: 700;
+    --fs-body: 18px;
+    --clr-white: #fff;
+    --clr-dark-gray: hsl(0, 0%, 59%);
+    --clr-dark-cyan: hsl(185, 75%, 30%);
+    --clr-dark-ds-blue: hsl(229, 23%, 23%);
+    --clr-dark-gray-blue: hsl(227, 10%, 46%);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Kumba Sans', sans-serif;
+    text-align: center;
+    font-size: var(--fs-body);
+    color: var(--clr-dark-gray);
+    background-color: var(--clr-dark-cyan);
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2, p {
+    margin: 0;
+}
+
+/* profile card */
+
+.circle {
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+.profile__card {
+    background: var(--clr-white);
+    width: 85%;
+    max-width: 375px;
+    padding-top: 7em;
+    margin: 0 auto;
+    background-image: url('images/bg-pattern-card.svg');
+    border-radius: 15px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.profile__info {
+    background: var(--clr-white);
+    position: relative;
+    padding-top: 4em;
+}
+
+.profile__image {
+    position: absolute;
+    border: 5px solid var(--clr-white);
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile__name {
+    font-weight: var(--fw-light);
+    font-size: 1.2rem;
+    color: var(--clr-dark-gray);
+}
+
+.profile__name span {
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark-ds-blue);
+}
+
+.city {
+    display: block;
+    font-size: 1rem;
+    padding: 1em 0 2em 0;
+}
+
+
+.stats__container {
+    padding: 1.5em 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat {
+    width: 33.33334%;
+}
+
+.unit {
+    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark-ds-blue);
+    margin-bottom: .3em;
+}
+
+.label {
+    font-size: .75rem;
+    letter-spacing: 2px;
+}
+
+
+@media (min-width: 768px) {
+
+    .circle {
+        display: block;
+    }
+    
+    .circle__one {
+        top: -40vh;
+        left: -5vw;
+    }
+    
+    .circle__two {
+        bottom: -40vh;
+        right: -5vw;
+    }
+}
